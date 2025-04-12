@@ -23,6 +23,34 @@ body {
     background-color: #E54B38;
 }
 
+.sidebar-font {
+    color: white;
+}
+
+#sidebar-grid {
+    display: grid;
+    height: 55%;
+    grid-template-rows: 1fr 3fr 1.5fr;
+    grid-template-areas:
+    "title"
+    "primary-menu"
+    "secondary-menu";
+    gap: 3rem;
+}
+
+#title {
+    grid-area: title;
+    font-size: 2rem;
+}
+
+#primary-menu {
+    grid-area: primary-menu;
+}
+
+#secondary-menu {
+    grid-area: secondary-menu;
+}
+
 #header {
     grid-area: header;
 }
