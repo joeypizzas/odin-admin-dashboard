@@ -38,9 +38,20 @@ body {
     gap: 3rem;
 }
 
+#pizza-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
 #title {
     grid-area: title;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: .25rem;
+    padding: .75rem;
 }
 
 #primary-menu {
