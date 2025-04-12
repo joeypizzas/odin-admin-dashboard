@@ -1,1 +1,33 @@
 /* CSS for odin admin dashboard */
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+#dashboard-container {
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar body";
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: #E54B38;
+}
+
+#header {
+    grid-area: header;
+}
+
+#body {
+    grid-area: body;
+    background-color: #D3D3D3;
+}
