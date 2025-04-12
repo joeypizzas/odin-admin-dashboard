@@ -25,6 +25,12 @@ body {
 
 .sidebar-font {
     color: white;
+    font-size: 1.25rem;
+}
+
+.sidebar-row-icon {
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 #sidebar-grid {
@@ -35,7 +41,7 @@ body {
     "title"
     "primary-menu"
     "secondary-menu";
-    gap: 3rem;
+    gap: 2rem;
 }
 
 #pizza-icon {
@@ -54,8 +60,19 @@ body {
     padding: .75rem;
 }
 
+.sidebar-menu-row {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1.5rem;
+    gap: 1rem;
+}
+
 #primary-menu {
     grid-area: primary-menu;
+    display: grid;
+    gap: 1rem;
 }
 
 #secondary-menu {
@@ -66,7 +83,7 @@ body {
     grid-area: header;
 }
 
-#body {
+#dashboard-body {
     grid-area: body;
     background-color: #D3D3D3;
 }
