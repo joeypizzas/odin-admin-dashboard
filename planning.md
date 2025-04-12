@@ -19,4 +19,11 @@ Grid architecture:
             - Cards inside: Coloring on left of div? Two rows. Header/body and icons. Top has justify-item start, bottom, justify-item end. 
                 Two row grid for body and header with smaller gap. 
         Column 2, row 2: two rows. Top is just card. Bottom is card and header. Grid. Gap. 
-            - 
+            - Top row: Card, three items, grid. Bottom two have border. Padding inside container. 
+                - Grid in each item with header and content. Justify item start. 
+            - Bottom row: two items. Grid. Bottom item 5-6x larger. 
+                - Header: justify item start. 
+                - Card, 4 items, grid. Padding and space between. 
+                    - Rows: Grid with two items each, grid starting with columns. Gap and justify content start. 
+                        - Images as is. 
+                        - Grid with two rows for header and sub-header. Justify item start. 
