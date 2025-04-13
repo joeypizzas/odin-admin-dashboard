@@ -85,14 +85,38 @@ body {
 #header {
     grid-area: header;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.1fr;
     grid-template-areas:
     "header-top"
     "header-bottom";
+    padding: .75rem 2rem .75rem 2rem;
 }
 
 #header-top {
     grid-area: header-top;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#header-top-left {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    align-items: center;
+}
+
+#search-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+#search-bar {
+    height: 1.5rem;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    width: 75%;
+}
+
+#header-top-right {
 }
 
 #header-bottom {
@@ -101,5 +125,5 @@ body {
 
 #dashboard-body {
     grid-area: body;
-    background-color: #D3D3D3;
+    background-color: #E0E0E0;
 }
