@@ -84,6 +84,19 @@ body {
 
 #header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "header-top"
+    "header-bottom";
+}
+
+#header-top {
+    grid-area: header-top;
+}
+
+#header-bottom {
+    grid-area: header-bottom;
 }
 
 #dashboard-body {
