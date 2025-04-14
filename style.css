@@ -94,29 +94,42 @@ body {
 
 #header-top {
     grid-area: header-top;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 #header-top-left {
-    display: grid;
-    grid-template-columns: 1fr 20fr;
+    display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
-#search-icon {
+.header-icon {
     height: 1.25rem;
     width: 1.25rem;
 }
 
 #search-bar {
     height: 1.5rem;
+    width: 35rem;
     background-color: #E0E0E0;
     border-radius: 10px;
-    width: 75%;
 }
 
 #header-top-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#header-top-font {
+    font-weight: bold;
 }
 
 #header-bottom {
