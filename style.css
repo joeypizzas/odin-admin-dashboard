@@ -134,6 +134,29 @@ body {
 
 #header-bottom {
     grid-area: header-bottom;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#large-profile-image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+#header-bottom-copy {
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+#header-bottom-name {
+    font-size: 1.25rem;
 }
 
 #dashboard-body {
