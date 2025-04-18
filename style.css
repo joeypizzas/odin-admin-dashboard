@@ -89,7 +89,7 @@ body {
     grid-template-areas:
     "header-top"
     "header-bottom";
-    padding: .75rem 2rem .75rem 2rem;
+    padding: .75rem 3rem .75rem 3rem;
 }
 
 #header-top {
@@ -157,6 +157,20 @@ body {
 
 #header-bottom-name {
     font-size: 1.25rem;
+}
+
+#header-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-button {
+    border: none;
+    background-color: #E54B38;
+    color: white;
+    padding: .6rem 1.5rem .6rem 1.5rem;
+    border-radius: 9999px;
 }
 
 #dashboard-body {
