@@ -177,6 +177,7 @@ body {
     grid-area: body;
     background-color: #E0E0E0;
     padding: 1.5rem 1.25rem 3rem 1.25rem;
+    gap: 1.25rem;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 3fr 1fr;
@@ -241,4 +242,51 @@ body {
 
 #body-secondary {
     grid-area: body-secondary;
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+    grid-template-areas: 
+    "secondary-header"
+    "secondary-body";
+}
+
+#secondary-header {
+    grid-area: secondary-header;
+    align-self: center;
+}
+
+#secondary-body {
+    grid-area: secondary-body;
+    display: flex;
+    flex-direction: column;
+}
+
+#recent-messages {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+#top-message {
+    padding-bottom: .75rem;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#middle-message {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#bottom-message {
+    padding-top: .75rem;
+
+}
+
+.message-header {
+    font-weight: 500;
+}
+
+.message-content {
+    font-size: .75rem;
+    color: #808080;
 }
