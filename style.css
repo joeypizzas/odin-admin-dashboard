@@ -194,11 +194,12 @@ body {
 
 #body-card-header {
     grid-area: body-card-header;
+    align-self: center;
 }
 
 .body-header {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 #body-card-grid {
@@ -211,6 +212,31 @@ body {
 .body-card {
     background: linear-gradient(to right, #E54B38 3%, white 3%);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    justify-content: space-between;
+}
+
+.card-header {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.card-order {
+    padding-inline-start: 10px;
+    color: #808080;
+}
+
+.card-icon-row {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.card-icon {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 #body-secondary {
