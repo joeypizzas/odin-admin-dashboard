@@ -203,6 +203,14 @@ body {
 
 #body-card-grid {
     grid-area: body-card-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1.25rem;
+}
+
+.body-card {
+    background: linear-gradient(to right, #E54B38 3%, white 3%);
+    border-radius: 10px;
 }
 
 #body-secondary {
